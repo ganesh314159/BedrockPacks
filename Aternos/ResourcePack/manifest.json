@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Ganesh SMP",
+        "description": "Ganesh314159's Pack",
+        "uuid": "776ca4c5-07d7-4d67-9da1-c81e990a006b",
+        "version": [0, 0, 1],
+        "min_engine_version": [ 1, 18, 10 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "description": "This pack is only for personal SMP",
+            "uuid": "2d152b91-46af-4efc-8d38-b799004d2ad3",
+            "version": [0, 0, 1]
+        }
+    ]
+}
