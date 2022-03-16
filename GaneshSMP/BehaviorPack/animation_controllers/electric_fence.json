@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.anniboy.electric_fence.functions": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function": "query.skin_id == 1"
+						},
+						{
+							"function_2": "query.skin_id == 2"
+						}
+					]
+				},
+				"function": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 1"
+						}
+					],
+					"on_entry": [
+						"/setblock ~ ~ ~ web",
+						"/tp @e[family=electric_fence,c=1,r=3] ~ ~ ~ 0 0",
+						"/execute @e[family=electric_fence,r=1.2,c=1] ~ ~ ~ /playsound dig.chain @a[r=5]",
+						"/gamerule sendcommandfeedback false",
+						"@s remove"
+					]
+				},
+				"function_2": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 2"
+						}
+					],
+					"on_entry": [
+						"/give @p anniboy:electric_fence_spawn_egg",
+						"/playsound dig.chain @a[r=8]",
+						"/kill @e[type=anniboy:electric_fence,c=1,r=1]",
+						"@s remove_2"
+					]
+				}
+			}
+		}
+	}
+}

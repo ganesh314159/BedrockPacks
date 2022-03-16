@@ -56,6 +56,66 @@
 		},
 		"anniboy_chest_braker": {
 			"textures": "textures/items/chest_braker"
+		},
+		"anniboy_door": {
+			"textures": "textures/items/door"
+		},
+		"anniboy_fence": {
+			"textures": "textures/items/fence"
+		},
+		"anniboy_door_key": {
+			"textures": "textures/items/door_key"
+		},
+		"anniboy_door_key_purple": {
+			"textures": "textures/items/door_key_purple"
+		},
+		"anniboy_door_key_blue": {
+			"textures": "textures/items/door_key_blue"
+		},
+		"anniboy_door_key_brown": {
+			"textures": "textures/items/door_key_brown"
+		},
+		"anniboy_door_key_cyan": {
+			"textures": "textures/items/door_key_cyan"
+		},
+		"anniboy_door_key_gray": {
+			"textures": "textures/items/door_key_gray"
+		},
+		"anniboy_door_key_green": {
+			"textures": "textures/items/door_key_green"
+		},
+		"anniboy_door_key_light_blue": {
+			"textures": "textures/items/door_key_light_blue"
+		},
+		"anniboy_door_key_lime": {
+			"textures": "textures/items/door_key_lime"
+		},
+		"anniboy_door_key_magenta": {
+			"textures": "textures/items/door_key_magenta"
+		},
+		"anniboy_door_key_orange": {
+			"textures": "textures/items/door_key_orange"
+		},
+		"anniboy_door_key_pink": {
+			"textures": "textures/items/door_key_pink"
+		},
+		"anniboy_door_key_red": {
+			"textures": "textures/items/door_key_red"
+		},
+		"anniboy_door_key_silver": {
+			"textures": "textures/items/door_key_silver"
+		},
+		"anniboy_door_key_white": {
+			"textures": "textures/items/door_key_white"
+		},
+		"anniboy_door_key_yellow": {
+			"textures": "textures/items/door_key_yellow"
+		},
+		"anniboy_door_braker": {
+			"textures": "textures/items/door_braker"
+		},
+		"anniboy_door_braker_universal": {
+			"textures": "textures/items/door_braker_universal"
 		}
 	}
 }

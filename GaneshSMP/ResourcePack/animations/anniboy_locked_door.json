@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.locked_door.lock": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [0, -15.5, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"position": {
+						"0.0": [0, 15.5, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.locked_door.unlock": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -15.5, 0]
+					}
+				},
+				"door1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 15.5, 0]
+					}
+				}
+			}
+		}
+	}
+}

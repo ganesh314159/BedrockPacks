@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.anniboyelectric_fence.loop": {
+			"loop": true,
+			"bones": {
+				"fence": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

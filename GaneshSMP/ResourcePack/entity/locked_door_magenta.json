@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "anniboy:locked_door_magenta",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "anniboy_door"
+			},
+			"textures": {
+				"door": "textures/entity/locked_door/08"
+			},
+			"geometry": {
+				"default": "geometry.anniboylocked_door"
+			},
+			"animations": {
+				"lock": "animation.locked_door.lock",
+				"unlock": "animation.locked_door.unlock"
+			},
+			"animation_controllers": [
+				{
+					"unlock": "controller.animation.locked_door.lock"
+				}
+			],
+			"render_controllers": [
+				"controller.render.locked_door"
+			]
+		}
+	}
+}

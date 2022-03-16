@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "R"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:heavy_weighted_pressure_plate"
+            },
+            "R": {
+                "item": "minecraft:redstone"
+            }
+        },
+        "result": {
+            "item": "anniboy:door_key",
+            "count": 1
+        },
+        "description": {
+            "identifier": "anniboy:door_key"
+        }
+    }
+}

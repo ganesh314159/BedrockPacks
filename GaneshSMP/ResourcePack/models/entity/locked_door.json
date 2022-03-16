@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.anniboylocked_door",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "door0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-7.9, 0, -7.9], "size": [15.8, 16, 15.8], "uv": [0, 31]}
+					]
+				},
+				{
+					"name": "door1",
+					"pivot": [0, 32, 0],
+					"cubes": [
+						{"origin": [-7.9, 16, -7.9], "size": [15.8, 16, 15.8], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

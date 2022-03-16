@@ -21,6 +21,27 @@ item.anniboy:chest_key_yellow.name=Yellow Chest Key Card
 item.anniboy:recognition_module.name=Recognition Module
 entity.unknown.name= 
 item.anniboy:chest_braker.name=Chest Braker
-
+item.spawn_egg.entity.anniboy:locked_door.name=Lockable Door
+item.anniboy:universal_door_braker.name=Universal Door Breaker [Can break locked and owned doors]
+entity.anniboy:locked_door.name=Lockable Door
+item.anniboy:door_key.name=Door Key Card
+item.anniboy:door_key_purple.name=Purple Door Key Card
+item.anniboy:door_key_blue.name=Blue door Key Card
+item.anniboy:door_key_brown.name=Brown Door Key Card
+item.anniboy:door_key_cyan.name=Cyan Door Key Card
+item.anniboy:door_key_gray.name=Gray Door Key Card
+item.anniboy:door_key_green.name=Green Door Key Card
+item.anniboy:door_key_light_blue.name=Light Blue Door Key Card
+item.anniboy:door_key_lime.name=Lime Door Key Card
+item.anniboy:door_key_magenta.name=Magenta Door Key Card
+item.anniboy:door_key_orange.name=Orange Door Key Card
+item.anniboy:door_key_pink.name=Pink Door Key Card
+item.anniboy:door_key_red.name=Red Door Key Card
+item.anniboy:door_key_silver.name=Silver Door Key Card
+item.anniboy:door_key_white.name=White Door Key Card
+item.anniboy:door_key_yellow.name=Yellow Door Key Card
+item.anniboy:door_braker.name=Door Breaker
+entity.anniboy:electric_fence.name=Electric Fence
+item.spawn_egg.entity.anniboy:electric_fence.name=Electric Fence
 
 

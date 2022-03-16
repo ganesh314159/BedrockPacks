@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#W#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:iron_nugget"
+            },
+            "W": {
+                "item": "minecraft:web"
+            }
+        },
+        "result": {
+            "item": "anniboy:electric_fence_spawn_egg",
+            "count": 1
+        },
+        "description": {
+            "identifier": "anniboy:electric_fence"
+        }
+    }
+}

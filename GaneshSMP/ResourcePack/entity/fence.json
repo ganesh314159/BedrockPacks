@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "anniboy:electric_fence",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "anniboy_door"
+			},
+			"textures": {
+				"door": "textures/entity/fence"
+			},
+			"geometry": {
+				"default": "geometry.anniboyelectricfence"
+			},
+			"spawn_egg": {
+				"texture": "anniboy_fence"
+			},
+			"animations": {
+					"loop": "animation.anniboyelectric_fence.loop"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.fence"
+				}
+			],
+			"render_controllers": [
+				"controller.render.locked_door"
+			]
+		}
+	}
+}

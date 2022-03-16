@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:door_key_blue",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "anniboy_door_key_blue",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

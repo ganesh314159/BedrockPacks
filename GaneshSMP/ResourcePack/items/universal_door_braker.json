@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:universal_door_braker",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "anniboy_door_braker_universal",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

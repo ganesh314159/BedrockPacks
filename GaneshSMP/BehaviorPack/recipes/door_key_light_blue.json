@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "i"
+        ],
+        "key": {
+            "#": {
+                "item": "anniboy:door_key"
+            },
+            "i": {
+                "item": "minecraft:dye",
+                "data": 12
+            }
+        },
+        "result": {
+            "item": "anniboy:door_key_light_blue",
+            "count": 1
+        },
+        "description": {
+            "identifier": "anniboy:door_key_light_blue"
+        }
+    }
+}

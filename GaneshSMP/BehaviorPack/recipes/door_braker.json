@@ -1,0 +1,29 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "#S#",
+            " S "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:obsidian"
+            },
+            "S": {
+                "item": "minecraft:stick",
+                "data": 0
+            }
+        },
+        "result": {
+            "item": "anniboy:door_braker",
+            "count": 1
+         },
+        "description": {
+            "identifier": "anniboy:door_braker"
+        }
+    }
+}
