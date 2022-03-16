@@ -1,2 +1,5 @@
 1. Lockable chests by AnniBoy
 link : https://mcpedl.com/lockable-chests-addon-1
+
+2. Locked doors and fence by AnniBoy
+link : https://mcpedl.com/lockable-doors-electric-fence-addon
