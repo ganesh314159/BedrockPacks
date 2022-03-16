@@ -43,5 +43,11 @@ item.anniboy:door_key_yellow.name=Yellow Door Key Card
 item.anniboy:door_braker.name=Door Breaker
 entity.anniboy:electric_fence.name=Electric Fence
 item.spawn_egg.entity.anniboy:electric_fence.name=Electric Fence
-
+item.anniboy:controlling_chip.name=Micro Controlller
+item.spawn_egg.entity.anniboy:drone.name=Drone Installation Kit
+entity.anniboy:drone.name=Drone
+item.anniboy:iron_rod.name=Iron Rod
+item.chainmail_helmet.name=Drone Vr Headset
+item.anniboy:controller.name=Controller
+action.hint.exit.anniboy:drone=Take off the helmet to exit VR
 

@@ -1,0 +1,90 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.drone": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function_5": "query.skin_id == 5"
+						},
+						{
+							"function_4": "query.skin_id == 4"
+						},
+						{
+							"function_3": "query.skin_id == 3"
+						},
+						{
+							"function_2": "query.skin_id == 2"
+						},
+						{
+							"function_1": "query.skin_id == 1"
+						}
+					]
+				},
+				"function_1": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 1"
+						}
+					],
+					"on_entry": [
+						"/summon anniboy:point ~ ~ ~",
+						"/event entity @p minecraft:owner",
+						"@s remove_function_1"
+					]
+				},
+				"function_2": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 2"
+						}
+					],
+					"on_entry": [
+						"/function player_drone_in_vr",
+						"@s remove_function_2"
+					]
+				},
+				"function_3": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 3"
+						}
+					],
+					"on_entry": [
+						"/function player_drone_in_vr",
+						"@s remove_function_3"
+					]
+				},
+				"function_4": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 4"
+						}
+					],
+					"on_entry": [
+						"/tellraw @a[r=8] {\"rawtext\":[{\"text\":\"Still Mode Activated\"}]}",
+						"/title @a[r=8] actionbar Still Mode Activated",
+						"/playsound random.pop @a[r=8]",
+						"/gamerule sendcommandfeedback false",
+						"@s remove_function_4"
+					]
+				},
+				"function_5": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 5"
+						}
+					],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false",
+						"/tellraw @a[r=8] {\"rawtext\":[{\"text\":\"Still Mode Deactivated\"}]}",
+						"/title @a[r=8] actionbar Still Mode Deactivated",
+						"/playsound random.pop @a[r=8]",
+						"@s remove_function_5"
+					]
+				}
+			}
+		}
+	}
+}

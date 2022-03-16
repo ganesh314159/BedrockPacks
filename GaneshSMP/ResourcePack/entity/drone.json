@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "anniboy:drone",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/drone"
+			},
+			"geometry": {
+				"default": "geometry.drone"
+			},
+			"spawn_egg": {
+				"texture": "is_kit"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				]
+			},
+			"animations": {
+				"look_at_target": "animation.common.look_at_target",
+				"fly": "animation.drone.fly"
+			},
+			"animation_controllers": [
+				{
+					"fly": "controller.animation.drone.fly"
+				}
+			],
+			"render_controllers": [
+				"controller.render.drone"
+			]
+		}
+	}
+}

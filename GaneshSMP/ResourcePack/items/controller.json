@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:controller",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "is_controller",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

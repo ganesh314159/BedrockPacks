@@ -1,0 +1,459 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "anniboy:drone",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"anniboy_functions"
+				]
+			},
+			"animations": {
+				"anniboy_functions": "controller.animation.drone"
+			}
+		},
+		"component_groups": {
+			"owned": {
+				"minecraft:shooter": {
+					"def": "minecraft:arrow"
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 3,
+					"burst_shots": 8,
+					"burst_interval": 0.25,
+					"charge_charged_trigger": 0,
+					"charge_shoot_trigger": 2,
+					"attack_interval_min": 1,
+					"attack_interval_max": 2,
+					"attack_radius": 16
+				},
+				"minecraft:health": {
+					"value": 30,
+					"max": 30
+				},
+				"minecraft:leashable": {
+					"soft_distance": 4,
+					"hard_distance": 6,
+					"max_distance": 15
+				},
+				"minecraft:is_saddled": {},
+				"minecraft:is_tamed": {},
+				"minecraft:behavior.hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.random_look_around": {
+					"priority": 4
+				},
+				"minecraft:can_fly": true,
+				"minecraft:navigation.hover": {
+					"can_path_over_water": true,
+					"can_sink": false,
+					"can_pass_doors": false,
+					"can_path_from_air": true,
+					"avoid_water": true,
+					"avoid_damage_blocks": true,
+					"avoid_sun": false
+				},
+				"minecraft:movement.hover": {},
+				"minecraft:behavior.controlled_by_player": {
+					"priority": 0
+				},
+				"minecraft:item_controllable": {
+					"control_items": [
+						"anniboy:controller"
+					]
+				},
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				},
+				"minecraft:behavior.float": {
+					"priority": 0
+				},
+				"minecraft:behavior.random_hover": {
+					"priority": 12,
+					"xz_dist": 8,
+					"y_dist": 8,
+					"y_offset": -1,
+					"interval": 1,
+					"hover_height": [
+						1,
+						7
+					]
+				},
+				"minecraft:behavior.tempt": {
+					"speed_multiplier": 1.6,
+					"within_radius": 24,
+					"can_tempt_vertically": true,
+					"items": [
+						"anniboy:controller"
+					]
+				},
+				"minecraft:behavior.follow_owner": {
+					"priority": 2,
+					"start_distance": 20,
+					"stop_distance": 5
+				},
+				"minecraft:sittable": {
+					"sit_event": {
+						"event": "minecraft:sit"
+					},
+					"stand_event": {
+						"event": "minecraft:fly"
+					}
+				},
+				"minecraft:behavior.stay_while_sitting": {
+					"priority": 0
+				}
+			},
+			"unowned": {
+				"minecraft:tameable": {
+					"tame_items": [
+						"minecraft:redstone_block"
+					],
+					"tame_event": {
+						"event": "minecraft:on_tame"
+					},
+					"probability": 1
+				},
+				"minecraft:health": {
+					"max": 2,
+					"value": 2
+				}
+			},
+			"minecraft:idle": {
+				"minecraft:inventory": {
+					"container_type": "hopper",
+					"inventory_size": 5
+				}
+			},
+			"minecraft:vr": {
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": {
+							"subject": "self",
+							"test": "is_family",
+							"value": "drone"
+						},
+						"event": "minecraft:loop"
+					}
+				}
+			},
+			"minecraft:loop": {
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": {
+							"subject": "self",
+							"test": "is_family",
+							"value": "drone"
+						},
+						"event": "minecraft:add_rider"
+					}
+				},
+				"minecraft:entity_sensor": {
+					"sensor_range": 3,
+					"maximum_count": 1,
+					"event_filters": {
+						"test": "is_family",
+						"subject": "other",
+						"value": "rider"
+					},
+					"event": "got_a_rider"
+				}
+			},
+			"remove_all": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"function_1": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"function_2": {
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			},
+			"function_3": {
+				"minecraft:skin_id": {
+					"value": 3
+				}
+			},
+			"function_4": {
+				"minecraft:skin_id": {
+					"value": 4
+				}
+			},
+			"function_5": {
+				"minecraft:skin_id": {
+					"value": 5
+				}
+			},
+			"function_6": {
+				"minecraft:skin_id": {
+					"value": 6
+				}
+			},
+			"function_7": {
+				"minecraft:skin_id": {
+					"value": 7
+				}
+			}
+		},
+		"components": {
+			"minecraft:movement": {
+				"value": 0.28
+			},
+			"minecraft:flying_speed": {
+				"value": 0.208
+			},
+			"minecraft:rideable": {
+				"crouching_skip_interact": false,
+				"rider_can_interact": false,
+				"seat_count": 1,
+				"seats": [
+					{
+						"position": [
+							0,
+							-1,
+							0.3
+						]
+					}
+				],
+				"family_types": [
+					"rider"
+				]
+			},
+			"minecraft:behavior.player_ride_tamed": {
+				"priority": 6
+			},
+			"minecraft:breathable": {
+				"total_supply": 20,
+				"suffocate_time": 2
+			},
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? 10 : 0"
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/crash.json"
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 0.5
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:nameable": {},
+			"minecraft:jump.static": {},
+			"minecraft:follow_range": {
+				"value": 32
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "monster"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "anniboy:point"
+								}
+							]
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mob",
+					"drone"
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"unowned"
+					]
+				}
+			},
+			"minecraft:on_tame": {
+				"remove": {
+					"component_groups": [
+						"unowned"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"owned",
+						"minecraft:vr",
+						"function_1",
+						"minecraft:idle"
+					]
+				}
+			},
+			"minecraft:sit": {
+				"add": {
+					"component_groups": [
+						"function_4"
+					]
+				}
+			},
+			"minecraft:fly": {
+				"add": {
+					"component_groups": [
+						"function_5"
+					]
+				}
+			},
+			"minecraft:add_rider": {
+				"add": {
+					"component_groups": [
+						"minecraft:vr",
+						"function_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:loop"
+					]
+				}
+			},
+			"minecraft:loop": {
+				"add": {
+					"component_groups": [
+						"minecraft:loop",
+						"function_3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:vr"
+					]
+				}
+			},
+			"got_a_rider": {
+				"remove": {
+					"component_groups": [
+						"minecraft:idle"
+					]
+				}
+			},
+			"lost_a_rider": {
+				"add": {
+					"component_groups": [
+						"minecraft:idle",
+						"minecraft:vr"
+					]
+				}
+			},
+			"remove_function_1": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_1"
+					]
+				}
+			},
+			"remove_function_2": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_2"
+					]
+				}
+			},
+			"remove_function_3": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_3"
+					]
+				}
+			},
+			"remove_function_4": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_4"
+					]
+				}
+			},
+			"remove_function_5": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_5"
+					]
+				}
+			},
+			"remove_function_6": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_6"
+					]
+				}
+			},
+			"remove_function_7": {
+				"add": {
+					"component_groups": [
+						"remove_all"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"function_7"
+					]
+				}
+			}
+		}
+	}
+}

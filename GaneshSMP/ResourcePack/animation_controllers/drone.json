@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.drone.fly": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "query.is_tamed"
+						}
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "!query.is_tamed"
+						}
+					],
+					"animations": [
+						"fly",
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

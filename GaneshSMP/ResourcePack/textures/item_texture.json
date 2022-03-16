@@ -116,6 +116,34 @@
 		},
 		"anniboy_door_braker_universal": {
 			"textures": "textures/items/door_braker_universal"
+		},
+		"is_chip": {
+			"textures": [
+				"textures/items/chip"
+			]
+		},
+		"is_rod": {
+			"textures": [
+				"textures/items/rod"
+			]
+		},
+		"is_kit": {
+			"textures": [
+				"textures/items/drone_installation_kit"
+			]
+		},
+		"helmet": {
+			"textures": [
+				"textures/items/leather_helmet",
+				"textures/items/drone_vr_helmet",
+				"textures/items/iron_helmet",
+				"textures/items/gold_helmet",
+				"textures/items/diamond_helmet",
+				"textures/items/netherite_helmet"
+			]
+		},
+		"is_controller": {
+			"textures": "textures/items/controller"
 		}
 	}
 }

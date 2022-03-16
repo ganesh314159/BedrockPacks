@@ -1,0 +1,31 @@
+{
+		"format_version": "1.12",
+		"minecraft:recipe_shaped": {
+			"tags": [
+				"crafting_table"
+			],
+			"pattern": [
+				"XGX",
+				"GCG",
+				"XGX"
+			],
+			"key": {
+				"G": {
+					"item": "anniboy:iron_rod"
+				},
+				"X": {
+					"item": "minecraft:iron_ingot"
+				},
+				"C": {
+					"item": "anniboy:controlling_chip"
+				}
+			},
+			"result": {
+				"item": "anniboy:drone_spawn_egg",
+				"count": 1
+			},
+			"description": {
+				"identifier": "anniboy:drone"
+			}
+	}
+}

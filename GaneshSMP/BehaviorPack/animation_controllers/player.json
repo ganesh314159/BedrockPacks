@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.anniboy_player": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"function_1": "query.skin_id == 1"
+						}
+					]
+				},
+				"function_1": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 1"
+						}
+					],
+					"on_entry": [
+						"/tp @p @e[family=point,c=1]",
+						"/event entity @e[type=anniboy:drone,c=1] lost_a_rider",
+						"@s remove_function_1"
+					]
+				}
+			}
+		}
+	}
+}
