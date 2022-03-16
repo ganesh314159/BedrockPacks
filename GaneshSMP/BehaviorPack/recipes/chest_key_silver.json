@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "i"
+        ],
+        "key": {
+            "#": {
+                "item": "anniboy:chest_key"
+            },
+            "i": {
+                "item": "minecraft:dye",
+                "data": 7
+            }
+        },
+        "result": {
+            "item": "anniboy:chest_key_silver",
+            "count": 1
+        },
+        "description": {
+            "identifier": "anniboy:chest_key_silver"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+pack.name=GaneshSMP
+pack.description=Ganesh314159's Pack
+item.spawn_egg.entity.anniboy:locked_chest.name=Lockable Chest
+entity.anniboy:locked_chest.name=Lockable Chest
+item.anniboy:chest_key.name=Chest Key Card
+item.anniboy:chest_key_purple.name=Purple Chest Key Card
+item.anniboy:chest_key_blue.name=Blue Chest Key Card
+item.anniboy:chest_key_brown.name=Brown Chest Key Card
+item.anniboy:chest_key_cyan.name=Cyan Chest Key Card
+item.anniboy:chest_key_gray.name=Gray Chest Key Card
+item.anniboy:chest_key_green.name=Green Chest Key Card
+item.anniboy:chest_key_light_blue.name=Light Blue Chest Key Card
+item.anniboy:chest_key_lime.name=Lime Chest Key Card
+item.anniboy:chest_key_magenta.name=Magenta Chest Key Card
+item.anniboy:chest_key_orange.name=Orange Chest Key Card
+item.anniboy:chest_key_pink.name=Pink Chest Key Card
+item.anniboy:chest_key_red.name=Red Chest Key Card
+item.anniboy:chest_key_silver.name=Silver Chest Key Card
+item.anniboy:chest_key_white.name=White Chest Key Card
+item.anniboy:chest_key_yellow.name=Yellow Chest Key Card
+item.anniboy:recognition_module.name=Recognition Module
+entity.unknown.name= 
+item.anniboy:chest_braker.name=Chest Braker
+
+
+

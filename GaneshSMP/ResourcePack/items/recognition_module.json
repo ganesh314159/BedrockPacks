@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:recognition_module",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": "anniboy_recognition_module",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:chest_braker",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": "anniboy_chest_braker",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

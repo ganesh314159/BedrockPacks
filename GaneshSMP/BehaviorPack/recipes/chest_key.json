@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "i"
+        ],
+        "key": {
+            "i": {
+                "item": "minecraft:redstone"
+            },
+            "#": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "result": {
+            "item": "anniboy:chest_key",
+            "count": 1
+        },
+        "description": {
+            "identifier": "anniboy:chest_key"
+        }
+    }
+}

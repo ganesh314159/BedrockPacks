@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:chest_key_gray",
+			"category": "Items"
+		},
+		"components": {
+			"minecraft:icon": "anniboy_chest_key_gray",
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

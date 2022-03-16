@@ -1,0 +1,61 @@
+{
+	"texture_data": {
+		"anniboy_chest": {
+			"textures": "textures/items/chest"
+		},
+		"anniboy_chest_key": {
+			"textures": "textures/items/chest_key"
+		},
+		"anniboy_chest_key_purple": {
+			"textures": "textures/items/chest_key_purple"
+		},
+		"anniboy_chest_key_blue": {
+			"textures": "textures/items/chest_key_blue"
+		},
+		"anniboy_chest_key_brown": {
+			"textures": "textures/items/chest_key_brown"
+		},
+		"anniboy_chest_key_cyan": {
+			"textures": "textures/items/chest_key_cyan"
+		},
+		"anniboy_chest_key_gray": {
+			"textures": "textures/items/chest_key_gray"
+		},
+		"anniboy_chest_key_green": {
+			"textures": "textures/items/chest_key_green"
+		},
+		"anniboy_chest_key_light_blue": {
+			"textures": "textures/items/chest_key_light_blue"
+		},
+		"anniboy_chest_key_lime": {
+			"textures": "textures/items/chest_key_lime"
+		},
+		"anniboy_chest_key_magenta": {
+			"textures": "textures/items/chest_key_magenta"
+		},
+		"anniboy_chest_key_orange": {
+			"textures": "textures/items/chest_key_orange"
+		},
+		"anniboy_chest_key_pink": {
+			"textures": "textures/items/chest_key_pink"
+		},
+		"anniboy_chest_key_red": {
+			"textures": "textures/items/chest_key_red"
+		},
+		"anniboy_chest_key_silver": {
+			"textures": "textures/items/chest_key_silver"
+		},
+		"anniboy_chest_key_white": {
+			"textures": "textures/items/chest_key_white"
+		},
+		"anniboy_chest_key_yellow": {
+			"textures": "textures/items/chest_key_yellow"
+		},
+		"anniboy_recognition_module": {
+			"textures": "textures/items/recognition_module"
+		},
+		"anniboy_chest_braker": {
+			"textures": "textures/items/chest_braker"
+		}
+	}
+}

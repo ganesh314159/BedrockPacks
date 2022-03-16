@@ -1,0 +1,12 @@
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "anniboy:chest_key_cyan"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1
+		},
+		"events": {}
+	}
+}

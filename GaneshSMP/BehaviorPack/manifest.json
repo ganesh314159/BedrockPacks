@@ -1,17 +1,28 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "pack.name",
-		"description": "pack.description",
-		"uuid": "...",
+		"name": "Ganesh SMP",
+		"description": "Ganesh314159's pack",
+		"uuid": "75ec32fa-139b-4b19-96a2-a3f148cd5867",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 16, 0]
 	},
 	"modules": [
 		{
 			"type": "data",
-			"uuid": "...",
+			"description": "This pack is only for personal SMP",
+			"uuid": "e0bbaca9-c668-432b-87b3-6490dcd353d9",
 			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "776ca4c5-07d7-4d67-9da1-c81e990a006b"
 		}
 	]
 }
